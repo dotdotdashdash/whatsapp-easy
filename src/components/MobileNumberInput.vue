@@ -1,8 +1,11 @@
 <template>
-  <div class="form-floating mb-3">
-    <input v-model="phoneNumber" @keyup="createLink" type="text" class="form-control" id="phoneNum" placeholder="9876543210">
-    <label for="floatingInput">Mobile Number</label>
-  </div>
+
+<div class="input-group mb-3">
+  <input id="country-code" type="text" class="form-control" placeholder="Country Code" aria-label="Username">
+  <input id="contact-number" type="text" class="form-control" placeholder="Contact Number" aria-label="Server">
+</div>
+
+
 </template>
 
 <script>
@@ -32,4 +35,8 @@
 </script>
 
 <style scoped>
+
+  #country-code {
+    width: 12.5%;
+  }
 </style>

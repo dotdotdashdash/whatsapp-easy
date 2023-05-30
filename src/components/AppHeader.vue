@@ -1,12 +1,8 @@
 <template>
   <header>
-    <div class="container my-3">
-      <div class="row">
-        <input
-          class="btn col-lg-3 col-md-6 col-sm-9 mx-auto px-5" 
-          type="button" 
-          value="Whatsapp Easy"
-        >
+    <div class="container">
+      <div class="row ">
+        <img class="mx-auto" src="../assets/images/logo-basic-1.png">
       </div>
     </div>
   </header>
@@ -21,10 +17,7 @@ export default {
 </script>
 
 <style scoped>
-  input {
-    border: 2px solid black;
-    font-weight: 600;
-    position: relative;
-    left: 0px;
+  img {
+    max-width: 7.5rem;
   }
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div>
     <app-header></app-header>
-    <hr>
     <link-creator></link-creator>
   </div>
 </template>

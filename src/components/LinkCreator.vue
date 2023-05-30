@@ -1,5 +1,9 @@
 <template>
-    <div class="container col-xl-10 col-xxl-8 px-4 ">
+  <div class="container col-xl-10 col-xxl-8 px-4 ">
+    <mobile-number-input @link-generated="loadLink"></mobile-number-input>
+  </div>
+
+    <!-- <div class="container col-xl-10 col-xxl-8 px-4 ">
       <div class="row align-items-center g-lg-5 py-3">
         <div class="col-lg-7 text-center text-lg-start">
           <h1 class="display-4 fw-bold lh-1 mb-3">Whatsapp Without Saving Contact</h1>
@@ -7,7 +11,6 @@
         </div>
         <div class="col-md-10 mx-auto col-lg-5" >
           <div class="p-4 p-md-5 rounded-3 bg-light">
-            <mobile-number-input @link-generated="loadLink"></mobile-number-input>
             <div class="container redirectContainer" style="display: none;">
               <div class="row">
                 <div class="align-self-center">
@@ -18,7 +21,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 </template>
 
 <script>
