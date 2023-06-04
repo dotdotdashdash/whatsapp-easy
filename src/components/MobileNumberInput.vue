@@ -7,7 +7,9 @@
         :dropdown-options="dropdownOptions"
         :input-options="inputOptions"
         :preferred-countries="preferredCountries"
-        @on-input="createLink">
+        @on-input="createLink"
+        validCharactersOnly
+      >
       </vue-tel-input>
     </div>
 
@@ -22,17 +24,19 @@
       return {
         phoneNumber:  ``,
 
-        link: `https://api.whatsapp.com/send?phone=91`,
-
         dropdownOptions: {
           showSearchBox: true,
-          showFlags: true
+          showFlags: true,
+          showDialCodeInSelection: true,
+          showDialCodeInList: true
         },
 
         preferredCountries: [ "in", `us`],
 
         inputOptions: {
-          placeholder: `Input a valid phone number`
+          placeholder: `Input a valid phone number`,
+          // showDialCode: true
+          
         },
       }
 
@@ -40,25 +44,9 @@
 
     methods: {      
       createLink(number, phoneObject) {
-
-        console.log(`\n\n>>>>>------${new Date().toLocaleTimeString('en-us',{timeZone: 'Asia/Calcutta'})}------->>\n | file: MobileNumberInput.vue:48 | number, phoneObject:`, phoneObject.countryCallingCode, phoneObject.nationalNumber);
-
-        this.$emit(`linkgenerated`, `whatsappLink`);        
+        this.$emit(`onValidNumber`, number, phoneObject);        
       }
     },
 
   }
 </script>
-
-<style>
-
-  .number-input input {
-    width: 300rem;
-    /* border */
-  }
-
-  .number-input input {
-    border-radius: 4px;
-  }
-
-</style>

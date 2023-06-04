@@ -7,9 +7,15 @@
       </div>
     </div>
 
-    <div class="wae-name row">
+    <div class="we-name row">
       <div class="col-4 mx-auto d-flex justify-content-center">
         <span>WhatsApp Easy</span>
+      </div>
+    </div>
+
+    <div class="we-subtitle row">
+      <div class="col mx-auto d-flex justify-content-center">
+        <span>Whatsapp without saving contact</span>
       </div>
     </div>
   
@@ -18,8 +24,12 @@
 
 <style scoped>
 
+  .we-subtitle {
+    text-align: center;
+  }
+
   @media (min-width: 768px) {
-    .wae-name span {
+    .we-name span {
       position: relative;
       /* bottom: 20px; */
       font-weight: bolder;
@@ -28,13 +38,13 @@
       text-align: center;
     }
 
-    .wae-name div {
+    .we-name div {
       width: 15rem;
     }
   }  
   
   @media (max-width: 768px) {
-    .wae-name span {
+    .we-name span {
       position: relative;
       /* bottom: 10px; */
       font-weight: bold;
@@ -43,7 +53,7 @@
       text-align: center;
     }
 
-    .wae-name div {
+    .we-name div {
     width: 15rem;
 
     }

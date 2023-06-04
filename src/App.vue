@@ -1,12 +1,12 @@
 <template>
-  <div class="container-fluid vh-100 col-sm-12 col-md-11 col-lg-9 col-xl-8">
+  <div class="container-fluid col-sm-12 col-md-11 col-lg-9 col-xl-8">
     <div class="header">
       <app-header></app-header>
     </div>
     <div class="create-link">
       <link-creator></link-creator>
     </div>
-    <div class="">
+    <div class="info">
       <verbiage></verbiage>
     </div>
   </div>
@@ -36,7 +36,7 @@
 
 <style>
 
-  .create-link {
+  .create-link, .info {
     margin-top: 5rem;    
   }
   .header {
@@ -44,8 +44,8 @@
   }
 
   @media (max-width: 576px) {
-    .create-link {
-      margin-top: 3rem;    
+    .create-link, .info{
+      margin-top: 2.5rem;    
     }
     .header {
       margin-top: 1rem;

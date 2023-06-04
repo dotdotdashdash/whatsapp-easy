@@ -1,5 +1,5 @@
 <template>
-    <mobile-number-input @linkgenerated="loadLink"></mobile-number-input>
+    <mobile-number-input @on-valid-number="loadLink"></mobile-number-input>
     <submit-button></submit-button>
 </template>
 
@@ -19,8 +19,8 @@
     },
 
     methods: {
-      loadLink(x) {
-        console.log(`-------------`, x)
+      loadLink(x, y) {
+        console.log(`-------------`, x, y)
       }
     },
 
