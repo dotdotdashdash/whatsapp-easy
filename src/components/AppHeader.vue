@@ -15,7 +15,7 @@
 
     <div class="we-subtitle row">
       <div class="col mx-auto d-flex justify-content-center">
-        <span>Whatsapp without saving contact</span>
+        <span>WhatsApp without saving contact</span>
       </div>
     </div>
   

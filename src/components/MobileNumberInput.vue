@@ -7,6 +7,7 @@
         :dropdown-options="dropdownOptions"
         :input-options="inputOptions"
         :preferred-countries="preferredCountries"
+        mode="international"
         @on-input="createLink"
         validCharactersOnly
       >
@@ -28,15 +29,15 @@
           showSearchBox: true,
           showFlags: true,
           showDialCodeInSelection: true,
-          showDialCodeInList: true
+          showDialCodeInList: true,
         },
 
         preferredCountries: [ "in", `us`],
 
         inputOptions: {
           placeholder: `Input a valid phone number`,
-          // showDialCode: true
-          
+          autofocus: true,
+          type: `tel`
         },
       }
 

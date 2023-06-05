@@ -1,17 +1,17 @@
 <template>
     <mobile-number-input @on-valid-number="loadLink"></mobile-number-input>
-    <submit-button></submit-button>
+    <create-link></create-link>
 </template>
 
 <script>
   import MobileNumberInput from './MobileNumberInput.vue';
-  import SubmitButton from './SubmitButton.vue'
+  import CreateLink from './CreateLink.vue';
 
   export default {
 
     components: {
       MobileNumberInput,
-      SubmitButton
+      CreateLink
     },
 
     data() {
