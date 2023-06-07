@@ -1,17 +1,26 @@
 <template>
+
+  <div>
     <mobile-number-input @on-valid-number="loadLink"></mobile-number-input>
-    <create-link></create-link>
+  </div>
+
+  <div>
+    <go-to-whatsapp></go-to-whatsapp>
+  </div>
+    
 </template>
 
 <script>
   import MobileNumberInput from './MobileNumberInput.vue';
-  import CreateLink from './CreateLink.vue';
+  import CreateLink        from './CreateLink.vue';
+  import GoToWhatsapp      from './GoToWhatsapp.vue';
 
   export default {
 
     components: {
       MobileNumberInput,
-      CreateLink
+      CreateLink,
+      GoToWhatsapp
     },
 
     data() {

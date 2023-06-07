@@ -31,7 +31,6 @@
   @media (min-width: 768px) {
     .we-name span {
       position: relative;
-      /* bottom: 20px; */
       font-weight: bolder;
       font-size: x-large;
       color: #128c7e;
@@ -46,7 +45,6 @@
   @media (max-width: 768px) {
     .we-name span {
       position: relative;
-      /* bottom: 10px; */
       font-weight: bold;
       font-size: large;
       color: #128c7e;
