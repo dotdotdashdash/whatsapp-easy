@@ -14,7 +14,6 @@
 
 <script>
   export default {
-
     data() {
       return {
         cursorType: `pointer`,
@@ -34,11 +33,14 @@
     },
 
     watch: {
-      enabled: function(buttonEnabled) {
-        this.enableClass = buttonEnabled ? `` : `disable-link`;
-        if (buttonEnabled) this.linkToWhatsapp += `${ this.countryCode }${ this.phoneNumber }`;
+      enabled: function(newValue) {
+        this.enableClass = newValue ? `` : `disable-link`;
+
+        if (newValue) this.linkToWhatsapp += `${ this.countryCode }${ this.phoneNumber }`;
+
       }
     }
+    
 
   }
 </script>
