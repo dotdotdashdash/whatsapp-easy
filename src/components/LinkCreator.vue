@@ -1,11 +1,18 @@
 <template>
 
   <div>
-    <mobile-number-input @on-valid-number="loadLink"></mobile-number-input>
+    <mobile-number-input
+      @on-valid-number="loadLink"
+      :maxlength="maxlength"
+    ></mobile-number-input>
   </div>
 
   <div>
-    <go-to-whatsapp></go-to-whatsapp>
+    <go-to-whatsapp
+      :enabled="enabled"
+      :country-code="countryCode"
+      :phone-number="phoneNumber"
+    ></go-to-whatsapp>
   </div>
     
 </template>
@@ -20,17 +27,27 @@
     components: {
       MobileNumberInput,
       CreateLink,
-      GoToWhatsapp
+      GoToWhatsapp,
+      
     },
 
     data() {
-      return {}
+      return {
+        enabled: false,
+        maxlength: 25,
+        countryCode: ``,
+        phoneNumber: ``
+      }
     },
 
     methods: {
-      loadLink(x, y) {
-        console.log(`-------------`, x, y)
+
+      loadLink(inputNumber, numberObject) {
+        this.enabled = numberObject.valid;
+        this.countryCode = numberObject.countryCallingCode
+        this.phoneNumber = numberObject.nationalNumber
       }
+      
     },
 
   }

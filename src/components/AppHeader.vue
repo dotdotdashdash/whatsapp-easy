@@ -42,15 +42,13 @@
     }
   }  
   
-  @media (max-width: 768px) {
-    .we-name span {
+  @media (max-width: 768px) {    .we-name span {
       position: relative;
       font-weight: bold;
       font-size: large;
       color: #128c7e;
       text-align: center;
     }
-
     .we-name div {
     width: 15rem;
 

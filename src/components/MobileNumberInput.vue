@@ -10,6 +10,7 @@
         mode="international"
         @on-input="createLink"
         validCharactersOnly
+        :autoFormat="false"
       >
       </vue-tel-input>
     </div>
@@ -20,8 +21,8 @@
 <script>
 
   export default {
-    data() {
 
+    data() {
       return {
         phoneNumber:  ``,
 
@@ -37,10 +38,14 @@
         inputOptions: {
           placeholder: `Input a valid phone number`,
           autofocus: true,
-          type: `tel`
+          type: `tel`,
+          maxlength: this.maxlength
         },
       }
+    },
 
+    props: {
+      maxlength: Number
     },
 
     methods: {      
@@ -51,3 +56,10 @@
 
   }
 </script>
+
+<style>
+  .number-input .vti__country-code {
+    font-size: medium;
+    color:black
+  }
+</style>

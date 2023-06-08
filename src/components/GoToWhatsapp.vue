@@ -1,11 +1,13 @@
 <template>
 
-  <div class="submit-btn col-6 col-lg-4 col-xxl-3 p-0 mx-auto mt-4 my-lg-4">      
+  <div class="submit-btn col-6 col-lg-4 col-xxl-3 p-0 mx-auto mt-4 my-lg-4">
+    <a :href="linkToWhatsapp">
       <img
         src="../assets/images/WhatsAppButtonGreenSmall.png"
         class="whatsapp-link-image"
-        :class="enableDisableClass"
+        :class="enableClass"
         alt="dynamic link to open whatsapp">
+    </a>   
   </div>
 
 </template>
@@ -14,14 +16,31 @@
   export default {
     data() {
       return {
-
-        cursorType: `auto`,
-
-        enableDisableClass: `disable-link`,
-        // enableDisableClass: ``
-
+        cursorType: `pointer`,
+        enableClass: ``,
+        linkToWhatsapp: `https://api.whatsapp.com/send?phone=`
       }      
+    },
+
+    props: {
+      enabled: Boolean,
+      countryCode: String,
+      phoneNumber: String
+    },
+
+    mounted() {
+      this.enableClass = this.enabled  ? `` : `disable-link`;
+    },
+
+    watch: {
+      enabled: function(newValue) {
+        this.enableClass = newValue ? `` : `disable-link`;
+
+        if (newValue) this.linkToWhatsapp += `${ this.countryCode }${ this.phoneNumber }`;
+
+      }
     }
+    
 
   }
 </script>
