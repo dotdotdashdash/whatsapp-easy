@@ -3,12 +3,12 @@
 
     <div class="row">
       <div class="col-4 mx-auto d-flex justify-content-center">
-        <img src="../assets/images/logo-basic-7-1.png">
+        <img class="rounded-3" src="../assets/images/logo-canva-2.png">
       </div>
     </div>
 
     <div class="we-name row">
-      <div class="col-4 mx-auto d-flex justify-content-center">
+      <div class="col-4 mx-auto mt-3 d-flex justify-content-center">
         <span>WhatsApp Easy</span>
       </div>
     </div>
@@ -27,14 +27,20 @@
   .we-subtitle {
     text-align: center;
   }
+  .we-name span {
+    /* color: #25D366; */
+    text-align: center;
+  }
+
+  img {
+    max-width: 27.5%;
+  }
 
   @media (min-width: 768px) {
     .we-name span {
       position: relative;
       font-weight: bolder;
       font-size: x-large;
-      color: #128c7e;
-      text-align: center;
     }
 
     .we-name div {
@@ -42,32 +48,26 @@
     }
   }  
   
-  @media (max-width: 768px) {    .we-name span {
+  @media (max-width: 768px) {    
+    .we-name span {
       position: relative;
       font-weight: bold;
       font-size: large;
-      color: #128c7e;
-      text-align: center;
     }
     .we-name div {
-    width: 15rem;
-
+      width: 15rem;
     }
-  }
-
-  img {
-    max-width: 30%;
   }
 
   @media (max-width: 768px) {
     img {
-      max-width: 80%;
+      max-width: 75%;
     }
   }
 
   @media (max-width: 576px) {
     img {
-      max-width: 100%;
+      max-width: 90%;
     }
   }
 

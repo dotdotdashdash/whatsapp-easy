@@ -40,7 +40,7 @@
     margin-top: 5rem;    
   }
   .header {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   @media (max-width: 576px) {
@@ -48,7 +48,7 @@
       margin-top: 2.5rem;    
     }
     .header {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
   }
 
