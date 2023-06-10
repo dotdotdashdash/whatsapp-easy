@@ -18,7 +18,8 @@
       return {
         cursorType: `pointer`,
         enableClass: ``,
-        linkToWhatsapp: `https://api.whatsapp.com/send?phone=`
+        baseUrl: `https://api.whatsapp.com/send?phone=`,
+        linkToWhatsapp: `#`
       }      
     },
 
@@ -36,8 +37,8 @@
       enabled: function(newValue) {
         this.enableClass = newValue ? `` : `disable-link`;
 
-        if (newValue) this.linkToWhatsapp += `${ this.countryCode }${ this.phoneNumber }`;
-
+        if (newValue)
+          this.linkToWhatsapp = `${ this.baseUrl }${ this.countryCode }${ this.phoneNumber }`;
       }
     }
     
