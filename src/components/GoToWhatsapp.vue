@@ -1,6 +1,6 @@
 <template>
 
-  <div class="submit-btn col-6 col-lg-4 col-xxl-3 p-0 mx-auto mt-4 my-lg-4">
+  <div class="submit-btn col-7 col-lg-4 col-xxl-3 p-0 mx-auto mt-4 my-lg-4">
     <a :href="linkToWhatsapp">
       <img
         src="../assets/images/WhatsAppButtonGreenSmall.png"

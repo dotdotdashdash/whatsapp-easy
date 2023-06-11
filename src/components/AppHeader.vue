@@ -3,7 +3,7 @@
 
     <div class="row">
       <div class="col-4 mx-auto d-flex justify-content-center">
-        <img class="rounded-3" src="../assets/images/logo-canva-2.png">
+        <img class="rounded-3" src="../assets/images/logo-canva-3.png">
       </div>
     </div>
 
