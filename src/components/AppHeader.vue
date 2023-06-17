@@ -3,19 +3,19 @@
 
     <div class="row">
       <div class="col-4 mx-auto d-flex justify-content-center">
-        <img src="../assets/images/logo-wa-5.png">
+        <img alt="logo for whatsapp easy" src="../assets/images/logo-wa-5.png">
       </div>
     </div>
 
     <div class="we-name row">
       <div class="col-4 mx-auto mt-3 d-flex justify-content-center">
-        <span>WhatsApp Easy</span>
+        <h1>WhatsApp Easy</h1>
       </div>
     </div>
 
     <div class="we-subtitle row">
       <div class="col mx-auto d-flex justify-content-center">
-        <span>WhatsApp without saving contact</span>
+        <h1>WhatsApp without saving contact</h1>
       </div>
     </div>
   
@@ -24,11 +24,12 @@
 
 <style scoped>
 
-  .we-subtitle {
+  .we-subtitle h1 {
     text-align: center;
+    font-size: large;
+    font-weight: 600;
   }
-  .we-name span {
-    /* color: #25D366; */
+  .we-name h1 {
     text-align: center;
   }
 
@@ -37,7 +38,7 @@
   }
 
   @media (min-width: 768px) {
-    .we-name span {
+    .we-name h1 {
       position: relative;
       font-weight: bolder;
       font-size: x-large;
@@ -49,7 +50,7 @@
   }  
   
   @media (max-width: 768px) {    
-    .we-name span {
+    .we-name h1 {
       position: relative;
       font-weight: bold;
       font-size: large;
