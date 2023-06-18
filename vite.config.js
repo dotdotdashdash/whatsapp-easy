@@ -36,9 +36,8 @@ export default defineConfig({
             purpose: 'any'
           },
           {
-            src: './images/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
+            src: './images/we-icon.svg',
+            type: 'image/svg',
             purpose: 'maskable'
           }
         ],
