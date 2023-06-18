@@ -38,10 +38,11 @@
       enabled: function(newValue) {
         this.enableClass = newValue ? `` : `disable-link`;
 
-        if (newValue)
+        if (newValue) {
           this.linkToWhatsapp = `${ this.baseUrl }${ this.countryCode }${ this.phoneNumber }`;
-        else
+        } else {
           this.linkToWhatsapp = `#`;
+        }
       }
     }
 
@@ -55,7 +56,7 @@
   }
 
   .disable-link {
-    display: inline-block;
+    /* display: inline-block; */
     opacity: 0.5;
     pointer-events: none;
     filter: grayscale(100%);
@@ -63,6 +64,7 @@
 
   img {
     width: 100%;
+    display: block;
   }
 
 </style>

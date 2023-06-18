@@ -3,7 +3,12 @@
 
     <div class="row">
       <div class="col-4 mx-auto d-flex justify-content-center">
-        <img alt="logo for whatsapp easy" src="../assets/images/logo-wa-5.png">
+        <img
+          width="100%"
+          height="100%"
+          alt="logo for whatsapp easy"
+          src="../assets/images/logo-wa-5.png"
+        >
       </div>
     </div>
 
@@ -34,7 +39,8 @@
   }
 
   img {
-    max-width: 27.5%;
+    max-width: 27.5% !important;
+    display: block;
   }
 
   @media (min-width: 768px) {
@@ -62,13 +68,15 @@
 
   @media (max-width: 768px) {
     img {
-      max-width: 75%;
+      max-width: 75% !important;
+      display: block;
     }
   }
 
   @media (max-width: 576px) {
     img {
-      max-width: 90%;
+      max-width: 90% !important;
+      display: block;
     }
   }
 
