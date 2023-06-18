@@ -19,16 +19,13 @@
 
 <script>
   import MobileNumberInput from './MobileNumberInput.vue';
-  import CreateLink        from './CreateLink.vue';
   import GoToWhatsapp      from './GoToWhatsapp.vue';
 
   export default {
 
     components: {
       MobileNumberInput,
-      CreateLink,
-      GoToWhatsapp,
-      
+      GoToWhatsapp
     },
 
     data() {
@@ -41,19 +38,13 @@
     },
 
     methods: {
-
       loadLink(inputNumber, numberObject) {
         this.enabled = numberObject.valid;
         this.countryCode = numberObject.countryCallingCode
         this.phoneNumber = numberObject.nationalNumber
       }
-      
     },
 
   }
 
 </script>
-
-<style>
-
-</style>

@@ -19,7 +19,6 @@
 </template>
 
 <script>
-
   export default {
 
     data() {
@@ -33,7 +32,7 @@
           showDialCodeInList: true,
         },
 
-        preferredCountries: [ "in", `us`],
+        preferredCountries: [ "in" ],
 
         inputOptions: {
           placeholder: `Input a valid phone number`,

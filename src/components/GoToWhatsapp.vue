@@ -1,11 +1,10 @@
 <template>
 
   <div class="submit-btn col-7 col-sm-6 col-md-5 col-lg-4 col-xxl-3 p-0 mx-auto mt-4 my-lg-4">
-    <a :href="linkToWhatsapp">
+    <a :href="linkToWhatsapp" :class="enableClass">
       <img
         src="../assets/images/WhatsAppButtonGreenSmall.png"
         class="whatsapp-link-image"
-        :class="enableClass"
         alt="dynamic link to open whatsapp">
     </a>   
   </div>
@@ -14,6 +13,7 @@
 
 <script>
   export default {
+
     data() {
       return {
         cursorType: `pointer`,
@@ -39,9 +39,10 @@
 
         if (newValue)
           this.linkToWhatsapp = `${ this.baseUrl }${ this.countryCode }${ this.phoneNumber }`;
+        else
+          this.linkToWhatsapp = `#`;
       }
     }
-    
 
   }
 </script>
@@ -57,6 +58,10 @@
     opacity: 0.5;
     pointer-events: none;
     filter: grayscale(100%);
+  }
+
+  img {
+    width: 100%;
   }
 
 </style>
