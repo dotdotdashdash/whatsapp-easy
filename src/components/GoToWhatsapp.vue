@@ -5,7 +5,8 @@
       <img
         src="../assets/images/WhatsAppButtonGreenSmall.png"
         class="whatsapp-link-image"
-        alt="dynamic link to open whatsapp">
+        alt="dynamic link to open whatsapp"
+      >
     </a>   
   </div>
 
