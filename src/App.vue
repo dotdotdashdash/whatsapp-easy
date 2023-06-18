@@ -13,7 +13,6 @@
 </template>
 
 <script>
-  import { RouterView } from "vue-router";
   import AppHeader from "./components/AppHeader.vue";
   import LinkCreator from "./components/LinkCreator.vue";
   import Verbiage from "./components/Verbiage.vue";
@@ -23,7 +22,6 @@
     components: {
       AppHeader,
       LinkCreator,
-      RouterView,
       Verbiage
     },
 

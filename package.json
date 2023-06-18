@@ -10,9 +10,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "vue": "^3.3.2",
-    "vue-router": "^4.2.0",
-    "vue-tel-input": "^8.1.1",
-    "vuetify": "^3.0.0"
+    "vue-tel-input": "^8.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

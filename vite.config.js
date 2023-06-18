@@ -5,13 +5,12 @@ import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: `/whatsapp-easy/`,
+  base: `/whatsapp-easy`,
   plugins: [
     vue(),
     VitePWA({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
-      devOptions: { enabled: true },
       workbox: { globPatterns: ['**/*.{js,css,html,ico,png,svg}'] },
       includeAssets: ['favicon.ico', 'apple-touch-icon.png'],
       manifest: {
@@ -21,23 +20,23 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/images/android-chrome-192x192.png',
+            src: 'public/images/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/images/android-chrome-512x512.png',
+            src: 'public/images/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: '/images/android-chrome-192x192.png',
+            src: 'public/images/android-chrome-192x192.png',
             sizes: '192x192',
             type: 'image/png',
             purpose: 'any'
           },
           {
-            src: '/images/android-chrome-512x512.png',
+            src: 'public/images/android-chrome-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
