@@ -2,7 +2,7 @@
   "name": "whatsapp-easy",
   "version": "0.0.0",
   "private": true,
-  "homepage":"https://dotdotdashdash.github.io/whatsapp-easy",
+  "homepage":"https://dotdotdashdash.github.io/",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
