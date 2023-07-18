@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: `/whatsapp-easy`,
+  base: ``,
   plugins: [
     vue(),
     VitePWA({
