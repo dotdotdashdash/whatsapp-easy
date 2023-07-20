@@ -17,7 +17,7 @@ export default defineConfig({
         name: 'WhatsApp Easy | WhatsApp without saving contact',
         short_name: 'WhatsApp-Easy',
         description: 'Send messages to any one on WhatsApp without adding contact',
-        start_url: "./",
+        start_url: "/",
         theme_color: '#ffffff',
         icons: [
           {
