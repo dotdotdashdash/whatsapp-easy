@@ -2,9 +2,10 @@
   "name": "whatsapp-easy",
   "version": "0.0.0",
   "private": true,
+  "homepage":"https://dotdotdashdash.github.io/",
   "scripts": {
-    "build": "vite build",
     "dev": "vite --host",
+    "build": "vite build",
     "preview": "vite preview --host"
   },
   "dependencies": {
@@ -13,11 +14,8 @@
     "vue-tel-input": "^8.1.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.0",
-    "@fullhuman/vue-cli-plugin-purgecss": "~5.0.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "vite": "^4.3.5",
     "vite-plugin-pwa": "^0.16.4"
-  },
-  "homepage": "https://dotdotdashdash.github.io/"
+  }
 }
